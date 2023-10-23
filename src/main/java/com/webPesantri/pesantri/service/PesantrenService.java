@@ -16,4 +16,10 @@ public class PesantrenService {
     public List<Pesantren> allPesantren(){
         return pesantrenRepository.findAll();
     }
+
+    public Pesantren savePesantren(Pesantren pesantren){
+        return pesantrenRepository.save(pesantren);
+
+    }
+
 }
